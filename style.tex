@@ -1,0 +1,32 @@
+\mode<presentation>
+{
+	\usetheme{Berlin}
+}
+
+\mode<article>
+{
+	\usepackage[left = 2cm, right = 2cm, top = 2cm, bottom=3cm]{geometry}
+}
+
+\usepackage{polyglossia}
+\setmainlanguage[spelling = new, babelshorthands = true]{german}
+\usepackage{fontspec}
+\usepackage{hyperref}
+
+
+\title[Japan, Deutschland: Entwicklung nach dem 2.\,WK]
+{Japans Entwicklung nach dem zweiten Weltkrieg im Vergleich mit Deutschland}
+
+
+\author{Thomas Schneider}
+
+\date{4. Dezember 2014}
+
+\newbox\mytempbox
+\newdimen\mytempdimen
+
+\newcommand\includegraphicscopyright[3][]{%
+	\leavevmode\vbox{\vskip3pt\raggedright\setbox\mytempbox=\hbox{\includegraphics[#1]{#2}}%
+		\mytempdimen=\wd\mytempbox\box\mytempbox\par\vskip1pt%
+		\fontsize{3}{3.5}\selectfont{\color{black!25}{\vbox{\hsize=\mytempdimen#3}}}\vskip3pt%
+	}}
