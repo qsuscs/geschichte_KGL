@@ -4,5 +4,5 @@ $postscript_mode = 0;
 $dvi_mode = 0;
 $clean_ext = "nav snm";
 $clean_full_ext = "synctex.gz";
-@default_files = ("presentation", "print");
+@default_files = ("presentation", "print", "handout");
 # vim:syntax=perl
